@@ -12,4 +12,8 @@ function deepestChild() {
 
 function increaseRankBy(n) {
   let rankedList = document.getElementsByClassName('ranked-list');
+
+  rankedList.forEach(() => {
+    console.log('woo');
+  });
 }
