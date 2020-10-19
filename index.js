@@ -8,6 +8,21 @@ function nestedTarget() {
 
 function deepestChild() {
   let grandNode = document.getElementById('grand-node');
+  // check if grand node has children
+  // loop through children to see if they have children
+  // loop through their children to see if they have children
+  // if not, return element
+  let lastChild(element) {
+    let children = element.children;
+
+    if (children) {
+      children.forEach(child => {
+        lastChild(child);
+      });
+    } else {
+      return element;
+    }
+  }
 }
 
 function increaseRankBy(n) {
